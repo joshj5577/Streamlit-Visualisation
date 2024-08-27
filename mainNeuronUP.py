@@ -26,7 +26,7 @@ def import_data(year):
   return data_x
 
 def import_activity(x):
-  activity_x = pd.read_csv('activity_267.csv')
+  activity_x = pd.read_csv('activity_1.csv')
   activity_x['activity_id'] = np.repeat(x, len(activity_x))
   return activity_x
 
