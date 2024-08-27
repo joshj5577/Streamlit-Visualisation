@@ -22,11 +22,11 @@ neuronUP_10colors = ['#8deeff','#7aecff','#66e9ff','#04dbff',
                    '#00cdef','#00bcdc','#00abc8','#009ab4','#0089a1','#00798d']
 
 def import_data(year):
-  data_x = pd.read_csv('C:/Users/joshj/AA_NEURON UP INTERNSHIP/data_%d.csv' % year)
+  data_x = pd.read_csv('data_2019.csv')
   return data_x
 
 def import_activity(x):
-  activity_x = pd.read_csv('C:/Users/joshj/INTERNSHIP DATA/All data/activity_%d.csv' % x)
+  activity_x = pd.read_csv('activity_267.csv)
   activity_x['activity_id'] = np.repeat(x, len(activity_x))
   return activity_x
 
@@ -235,7 +235,7 @@ def show_result_variables(x):
 
 def activity_domains(x):
   activity_x = import_activity(x)
-  areas_df = pd.read_csv('C:/Users/joshj/INTERNSHIP DATA/All data/areas.csv')
+  areas_df = pd.read_csv('areas.csv')
   return st.write(areas_df[areas_df['activity_id']==x])
 
 #"""## Show activity difficulty levels function"""
