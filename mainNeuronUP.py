@@ -9,7 +9,7 @@ import requests
 import streamlit as st
 import pandas as pd
 import numpy as np
-pip install seaborn
+!pip install seaborn
 import seaborn as sns
 from matplotlib import pyplot as plt
 
